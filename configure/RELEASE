@@ -1,0 +1,44 @@
+## configure/RELEASE: Location of external products
+
+# Run "gnumake clean uninstall install" in the application top
+# directory whenever this file is changed or any external module
+# pointed to by this RELEASE file is rebuilt.
+
+# ==========================================================
+# We will include some variables to indicate where
+# our epics, base, modules, iocTop live.
+# We also include a variable for the version of EPICS BASE
+# =========================================================
+include $(TOP)/RELEASE_SITE
+# =========================================================
+
+TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
+
+# =============================================================
+# If you don't want to install into $(TOP) then
+# define INSTALL_LOCATION_APP here
+#INSTALL_LOCATION_APP=<fullpathname>
+
+# =============================================================
+# Define location of module tree with respect to
+# EPICS_SITE_TOP
+# =============================================================
+EPICS_MODULES=$(MODULES_SITE_TOP)
+
+# =============================================================
+# Define the version of modules needed by
+# IOC apps or other Support apps
+# =============================================================
+ASYN_MODULE_VERSION=asyn-R4-21_1-0
+#AUTOSAVE_MODULE_VERSION=autosave-R5-0_1-0
+MOTOR_MODULE_VERSION=motor-R6-8-RC1_1-2
+#SEQ_MODULE_VERSION=seq-R2-1-6_1-0
+
+
+ASYN=$(EPICS_MODULES)/asyn/$(ASYN_MODULE_VERSION)
+#AUTOSAVE=$(EPICS_MODULES)/autosave/$(AUTOSAVE_MODULE_VERSION)
+#SNCSEQ=$(EPICS_MODULES)/seq/$(SEQ_MODULE_VERSION)
+MOTOR=$(EPICS_MODULES)/motor/$(MOTOR_MODULE_VERSION)
+
+# EPICS_BASE usually appears last so other apps can preempt definitions
+EPICS_BASE=$(BASE_SITE_TOP)/$(EPICS_BASE_VER)

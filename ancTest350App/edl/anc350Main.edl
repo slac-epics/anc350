@@ -1,0 +1,191 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 120
+y 203
+w 195
+h 291
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+showGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 20
+w 175
+h 261
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 38
+y 11
+w 120
+h 20
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+value {
+  "ANC 350"
+}
+border
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 29
+y 89
+w 136
+h 31
+fgColor index 14
+bgColor index 4
+topShadowColor index 2
+botShadowColor index 8
+font "helvetica-medium-r-18.0"
+buttonLabel "Step Module 0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ancStepModule.edl"
+}
+allowDups {
+  0 1
+}
+symbols {
+  0 "axis=0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 30
+y 134
+w 135
+h 31
+fgColor index 14
+bgColor index 4
+topShadowColor index 2
+botShadowColor index 8
+font "helvetica-medium-r-18.0"
+buttonLabel "Step Module 1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ancStepModule.edl"
+}
+allowDups {
+  0 1
+}
+symbols {
+  0 "axis=1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 30
+y 179
+w 135
+h 31
+fgColor index 14
+bgColor index 4
+topShadowColor index 2
+botShadowColor index 8
+font "helvetica-medium-r-18.0"
+buttonLabel "Step Module 2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ancStepModule.edl"
+}
+allowDups {
+  0 1
+}
+symbols {
+  0 "axis=2"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 88
+y 238
+w 87
+h 32
+fgColor index 14
+bgColor index 3
+topShadowColor index 2
+botShadowColor index 8
+label "EXIT"
+font "helvetica-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 30
+y 44
+w 136
+h 31
+fgColor index 14
+bgColor index 4
+topShadowColor index 2
+botShadowColor index 8
+font "helvetica-medium-r-18.0"
+buttonLabel "Global"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ancController.edl"
+}
+allowDups {
+  0 1
+}
+endObjectProperties
+

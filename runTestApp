@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd iocBoot/iocancTest350
+./st.cmd
+

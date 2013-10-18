@@ -1,0 +1,556 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 22
+y 61
+w 500
+h 600
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 325
+y 145
+w 100
+h 21
+controlPv "$(P):POSITION"
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 86
+y 98
+w 108
+h 21
+controlPv "OSL:READ:TEMPSTATUS"
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 95
+y 153
+w 108
+h 21
+controlPv "OSL:READ:MAXAMP"
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 190
+w 140
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 191
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "OSL:STATUS:CONNECT"
+visMin "0"
+visMax "1"
+value {
+  "Connected"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 190
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 9
+visPv "OSL:STATUS:CONNECT"
+visMin "1"
+visMax "2"
+value {
+  "Disconnected"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 220
+w 140
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 221
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "OSL:STATUS:ENABLED"
+visMin "1"
+visMax "2"
+value {
+  "Enabled"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 220
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 9
+visPv "OSL:STATUS:ENABLED"
+visMin "0"
+visMax "1"
+value {
+  "Not Enabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 250
+w 140
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 251
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "OSL:STATUS:REFVALID"
+visMin "1"
+visMax "2"
+value {
+  "Referenced"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 251
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 9
+visPv "OSL:STATUS:REFVALID"
+visMin "0"
+visMax "1"
+value {
+  "Not Referenced"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 280
+w 140
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 281
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "OSL:STATUS:SENSERROR"
+visMin "0"
+visMax "1"
+value {
+  "No Error"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 281
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 9
+visPv "OSL:STATUS:SENSERROR"
+visMin "1"
+visMax "2"
+value {
+  "Error"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 310
+w 140
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 311
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "OSL:STATUS:HUMP"
+visMin "1"
+visMax "2"
+value {
+  "Hump Detected"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 311
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 9
+visPv "OSL:STATUS:HUMP"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 340
+w 140
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 341
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "OSL:STATUS:RUNNING"
+visMin "1"
+visMax "2"
+value {
+  "Moving"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 341
+w 140
+h 25
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 9
+visPv "OSL:STATUS:RUNNING"
+visMin "0"
+visMax "1"
+value {
+  "Not Moving"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 325
+y 185
+w 95
+h 25
+controlPv "$(P):CMD:TARGET"
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 335
+y 225
+w 75
+h 25
+controlPv "OSL:CMD:TWKAMT"
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 220
+w 40
+h 35
+fgColor index 14
+onColor index 4
+offColor index 4
+topShadowColor index 2
+botShadowColor index 8
+controlPv "OSL:CMD:TWKNEG.PROC"
+pressValue "1"
+onLabel "-"
+offLabel "-"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 420
+y 220
+w 40
+h 35
+fgColor index 14
+onColor index 4
+offColor index 4
+topShadowColor index 2
+botShadowColor index 8
+controlPv "OSL:CMD:TWKPOS.PROC"
+pressValue "1"
+onLabel "+"
+offLabel "+"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+

@@ -1,0 +1,10 @@
+file basic_asyn_motor.db
+{
+pattern { P,      M,     DESC,            DTYP,      DIR,  VELO,  VBAS,  ACCL,
+          BDST,   BVEL,   BACC,   PORT,      ADDR,   MRES,   PREC,
+          EGU,  DHLM,   DLLM,    INIT }      
+        { "T1:",   "M1", "Attocube motor", asynMotor, Pos,  300,   50,     1,
+          0,      0,      1,      "ANC1",    0,      0.001,  3,
+          "um", 100000, -100000, ""}
+}
+

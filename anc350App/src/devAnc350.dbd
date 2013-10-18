@@ -1,0 +1,2 @@
+device(longin,INST_IO,asynLiAnc350Read, "ANC350")
+device(longout,INST_IO,asynLoAnc350Write, "ANC350")

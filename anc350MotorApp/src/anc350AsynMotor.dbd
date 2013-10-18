@@ -1,0 +1,3 @@
+include "motorSupport.dbd"
+driver(anc350AsynMotor)
+registrar(anc350AsynMotorRegister)

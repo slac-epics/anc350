@@ -1,0 +1,30 @@
+4th July 2011
+
+Version 1_3
+
+Fixed a race condition that occurs when multiple stages are driven by the
+same ANC350 controller.  Mutex protection has been placed around the 
+correlation ID, and the ID is copied to a local variable whilst waiting 
+for the response to allow servicing of requests from other motor records.
+
+
+10th March 2010
+
+Version 1_2
+
+Some fixes to improve the motor record support were submitted by Emma
+Shepherd at Diamond Light Source after testing.  These fixes are included
+in this version.
+
+
+26th October 2009
+
+Version 1_1 
+
+This is a patch to solve a problem with mismatching of correlation numbers 
+sent to the ANC350.  These numbers are confirmed in the response and a 
+situation would arise where the numbers were larger than could be accepted
+by the ANC350.  The correlation numbers are now wrapped at 10000 to stop
+this problem from arising.
+
+
