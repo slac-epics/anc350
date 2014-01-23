@@ -11,8 +11,8 @@ DIRS += $(wildcard *[Ss]up)
 #DIRS += $(wildcard *[Aa]pp)
 DIRS += anc350App
 #DIRS += ancTest350App
-DIRS += anc350MotorApp
-DIRS += ancTest350App
+#DIRS += anc350MotorApp
+#DIRS += ancTest350App
 #DIRS += anc350MotorApp
 DIRS += $(wildcard ioc[Bb]oot)
 
