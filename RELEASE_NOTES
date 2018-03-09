@@ -1,3 +1,17 @@
+#==============================================================
+#
+#  Name: RELEASE_NOTES
+#
+#  Rem: This files describes release notes for
+#       the anc350 module.
+#
+#
+#==============================================================
+#
+R1.4.0, 2018-Mar-08, Joao Rodrigues	(joaoprod):
+     Changes to new git workflow and epics 3.15	
+
+
 4th July 2011
 
 Version 1_3
