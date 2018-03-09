@@ -8,7 +8,7 @@ install:
 	cp -f $(TOP)/anc350App/edl/ancStepModule.edl $(TOP)/data/ancStepModule.edl
 	cp -f $(TOP)/anc350App/edl/ancController.edl $(TOP)/data/ancController.edl
 
-clean::
+clean:
 	rm -rf $(TOP)/data
 
 include $(TOP)/configure/RULES
