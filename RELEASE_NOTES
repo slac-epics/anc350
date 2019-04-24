@@ -8,6 +8,9 @@
 #
 #==============================================================
 #
+R1.4.1, 2019-Apr-24, Hugo Slepicka	(slepicka):
+     Building with asyn R4.31-0.1.0
+
 R1.4.0, 2018-Mar-08, Joao Rodrigues	(joaoprod):
      Changes to new git workflow and epics 3.15	
 
